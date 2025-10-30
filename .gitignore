@@ -1,58 +1,23 @@
 # Ignore everything
 *
 
-# Ignore all folders
-*/
+# Allow folders (so ignored files inside them can be re-included if needed)
+!*/
 
-# Ignore all dotfiles (including .gitignore, .git/, .github/)
-.*
+# Explicitly ignore .gitignore itself
+*.gitignore
 
 # Ignore Git internals
 .git/
-.gitignore
 .gitmodules
 
-# Ignore GitHub config
+# Ignore GitHub config and metadata
 .github/
 .gitattributes
 .gitkeep
 
-# Ignore common config and lock files
-*.lock
-*.config
-*.conf
-*.cfg
-*.env
-
-# Ignore all source code
-*.c
-*.cpp
-*.py
-*.js
-*.ts
-*.java
-*.rb
-*.go
-*.rs
-*.sh
-
-# Ignore all docs and text
-*.md
-*.txt
-*.rst
-
-# Ignore all media
-*.mp4
-*.mp3
-*.wav
-*.png
-*.jpg
-*.svg
-*.webp
-
-# Ignore all build artifacts
-build/
-dist/
-out/
-bin/
-obj/
+# Ignore common CI/CD and workflows
+.github/workflows/
+.github/actions/
+.github/ISSUE_TEMPLATE/
+.github/PULL_REQUEST_TEMPLATE.md

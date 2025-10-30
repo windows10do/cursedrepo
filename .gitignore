@@ -1,0 +1,58 @@
+# Ignore everything
+*
+
+# Ignore all folders
+*/
+
+# Ignore all dotfiles (including .gitignore, .git/, .github/)
+.*
+
+# Ignore Git internals
+.git/
+.gitignore
+.gitmodules
+
+# Ignore GitHub config
+.github/
+.gitattributes
+.gitkeep
+
+# Ignore common config and lock files
+*.lock
+*.config
+*.conf
+*.cfg
+*.env
+
+# Ignore all source code
+*.c
+*.cpp
+*.py
+*.js
+*.ts
+*.java
+*.rb
+*.go
+*.rs
+*.sh
+
+# Ignore all docs and text
+*.md
+*.txt
+*.rst
+
+# Ignore all media
+*.mp4
+*.mp3
+*.wav
+*.png
+*.jpg
+*.svg
+*.webp
+
+# Ignore all build artifacts
+build/
+dist/
+out/
+bin/
+obj/
